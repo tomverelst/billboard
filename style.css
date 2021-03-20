@@ -67,6 +67,7 @@ img {
 .left, .right {
     opacity: 0;
     background: #777777;
+    z-index: 999;
 }
 
 .left:hover, .right:hover {
@@ -98,6 +99,10 @@ img {
 
 .left-icon svg {
     left: 2vw;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .left-icon svg {
