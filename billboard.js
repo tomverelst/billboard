@@ -73,8 +73,6 @@ function carrousel() {
         });
         right.addEventListener('click', function () {
             const visibleImage = calculateVisibleImage();
-            console.log("Visible image is " +visibleImage.index + " and positioned " + visibleImage.position);
-            console.log("Scroll left is " + container.scrollLeft);
             if (visibleImage.position === 'centered' && visibleImage.hasNext) {
                 goToImage(visibleImage.index + 1);
             } else if (visibleImage.position === 'left' && visibleImage.hasNext) {
