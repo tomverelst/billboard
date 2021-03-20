@@ -39,7 +39,6 @@ function carrousel() {
         function goToImage(imageIndex){
             const canvas = container.getClientRects()[0];
             const canvasWidth = canvas.right - canvas.left;
-            const canvasMiddle = (canvas.left + canvas.right) / 2;
             const imageCanvas = images[imageIndex].getClientRects()[0];
             const imageWidth = imageCanvas.right - imageCanvas.left;
             const space = (canvasWidth / 2) - (imageWidth / 2);
@@ -83,9 +82,6 @@ function carrousel() {
             } else if (visibleImage.position === 'right') {
                 goToImage(visibleImage.index);
             }
-            // i = Math.min(calculateVisibleImageIndex() + 1, amountOfImages-1);
-            // console.log("Visible image is " + i);
-            // container.scrollLeft = images[i].x;
         });
     });
 }
