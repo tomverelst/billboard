@@ -1,0 +1,110 @@
+body {
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+.portfolio ul {
+
+}
+
+.portfolio li {
+    margin-bottom: 3rem;
+}
+
+img {
+    max-height: 70vh;
+    max-width: 70vw;
+    margin: 0 auto;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row {
+    display: block;
+    width: 100vw;
+    flex: 0 0 auto;
+    margin: 1rem auto;
+}
+
+.center {
+    margin: 0 auto;
+    width: 70vw;
+}
+
+.horizontal-scroll {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    overflow: auto;
+}
+
+.carrousel {
+    position: relative;
+}
+
+.left, .left-icon, .right, .right-icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.left, .right {
+    opacity: 0;
+    background: #777777;
+}
+
+.left:hover, .right:hover {
+    opacity: 0.5;
+    -webkit-transition: opacity .15s ease-in-out;
+    -moz-transition: opacity .15s ease-in-out;
+    -ms-transition: opacity .15s ease-in-out;
+    -o-transition: opacity .15s ease-in-out;
+    transition: opacity .15s ease-in-out;
+}
+
+.left, .left-icon {
+    width: 10vw;
+    left: 0;
+}
+
+.right, .right-icon {
+    width: 10vw;
+    right: 0;
+}
+
+.left-icon svg, .right-icon svg {
+    height: 5vh;
+    width: 5vw;
+    position: absolute;
+    top: 45%;
+    opacity: 0.5;
+}
+
+.left-icon svg {
+    left: 2vw;
+}
+
+.left-icon svg {
+    -webkit-transform: rotate(180deg); /* safari 6.0 - 9.0 */
+    transform: rotate(180deg);
+}
+
+.right-icon svg {
+    right: 2vw;
+}
